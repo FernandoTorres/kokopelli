@@ -1,5 +1,8 @@
 About
 =====
+
+M. Keeter's original [repo](http://www.github.com/mkeeter/kokopelli)
+
 `kokopelli` is an open-source tool for computer-aided design and manufacturing (CAD/CAM).
 
 It uses Python as a hardware description language for solid models.  A set of core libraries define common shapes and transforms, but users are free to extend their designs with their own definitions.
