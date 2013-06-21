@@ -13,3 +13,7 @@ util/doxygen/*/latex/*
 
 ## Temporary files
 *~
+
+## Prerequisites
+pre-requisites/*
+
