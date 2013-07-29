@@ -66,6 +66,8 @@ Mesh* load_stl(const char* filename)
         mesh->tdata[t*3 + 2] = t*3 + 2;
     }
 
+    fclose(input);
+
     return mesh;
 }
 
@@ -76,7 +78,7 @@ void save_stl(Mesh* mesh, const char* filename)
     FILE* stl = fopen(filename, "wb");
 
     // 80-character header
-    fprintf(stl, "This is a binary STL file made in kokopelli. Learn more at kokompe.cba.mit.edu  ");
+    fprintf(stl, "This is a binary STL file made in kokopelli    \n(github.com/mkeeter/kokopelli)\n\n");
 
     for (int i=0; i<4; ++i) {
         fputc(((char*)&mesh->tcount)[i], stl);
